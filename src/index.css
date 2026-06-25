@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts are imported (offline, bundled) in main.jsx via @fontsource latin CSS;
+   drei <Text> loads the same .woff files directly for in-scene WebGL text. */
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  /* black is a flash-guard only; the live WebGL scene is the real background */
+  background: #01030a;
+  color: #cfeffb;
+  font-family: 'Archivo', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* The R3F <Canvas> is fixed + full-viewport behind everything. */
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+/* Hide scrollbar while still allowing the Lenis-driven descent region to scroll. */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+* {
+  scrollbar-width: none;
+}

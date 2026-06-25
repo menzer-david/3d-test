@@ -1,0 +1,26 @@
+{
+  "project": "AURELIA — deep-sea bioluminescence research collective (midnight zone)",
+  "generated": "2026-06-24",
+  "assets": [
+    {
+      "id": "caustics-surface",
+      "filename": "caustics-surface.png",
+      "type": "texture",
+      "target": "KF1 SURFACE — the sunlit-surface beat (and any near-surface caustic light)",
+      "use": "Projected/panned caustic light map. Sample as a grayscale light pattern (e.g. projected onto near-surface geometry or an additive overlay) and animate by panning/scrolling UVs to fake rippling caustics. High-contrast light-on-near-black; build can lift contrast and tile/pan to taste. Fade out with depth as the descent leaves the sunlit zone.",
+      "prompt": "Underwater caustics light gobo on a pure solid black background. Thin bright white interconnected refracted light lines forming an even rippling web across the entire frame, like sunlight refracted through gently rippling water. Crisp high contrast, clean and smooth with NO grain, no noise, no sand, no rock, no floor, no surface texture. Faint cyan tint on the brightest lines. Seamless and evenly distributed, no single bright spot, no dark empty corner. Pure light-on-black caustic texture. No objects, no creatures, no horizon, no text.",
+      "source": "higgsfield",
+      "status": "ready"
+    },
+    {
+      "id": "kf1-surface-backdrop",
+      "filename": "kf1-surface-backdrop.png",
+      "type": "background-image",
+      "target": "KF1 SURFACE — title held over the sunlit surface",
+      "use": "FAR backdrop layer BEHIND the real volumetric fog + geometry for KF1 (never a flat plane standing in for the world, never a CSS background). Sun refracted through the rippling ceiling at top with god-rays fanning into deepening teal; place it as the distant sunlit ceiling the camera looks up toward, with procedural fog/haze in front. As the descent (KF2) begins, let fog swallow it so it fades to black by the midnight zone.",
+      "prompt": "The ocean surface seen from deep below in the sunlit zone, looking straight up. A blown-out white sun disc refracted through a rippling silver-aqua water ceiling, hard volumetric god-rays shafting downward and fanning into deep teal water that fades to indigo and near-black at the edges. Suspended marine haze and faint drifting particles. No creatures, no land, no boats, no text, no horizon line. Cinematic, still, reverent deep-sea mood, aqua and teal palette with a luminous core.",
+      "source": "higgsfield",
+      "status": "ready"
+    }
+  ]
+}
